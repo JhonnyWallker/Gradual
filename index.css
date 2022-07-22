@@ -1,0 +1,762 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
+h3 {font-size: 2em;}
+h5 {color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+a {text-decoration: none;}
+li {font-size: 1.25em;}
+
+
+#logo {
+    display: block;
+    margin: 0;
+    padding: 25px 30px;
+    color: #9B1D20;
+    font-family: Lobster;
+    font-size: 43px;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0,0.5);
+}
+
+
+.bars__menu {
+        position: absolute;
+        right: 5px;
+        top: 70px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #9B1D20;
+    margin-top: 10px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activeline1__bars-menu {
+    transform: rotate(45deg)
+    translate(0px, 1px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg)
+    translate(-2px, 2px);
+}
+
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+}
+
+.menu {
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 300ms;
+    
+       
+}
+
+.mostrar_menu {
+    height: 320px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    background-color: #9b1d1fbc;
+    
+    
+    
+}
+header a {
+    padding: 15px 12px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+header a:hover { 
+    color: #9B1D20;
+}
+
+.hiper {
+    color: rgb(200, 200, 200);
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.hiper:hover {
+    
+    color: #aa292c;
+    cursor: pointer;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0,0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.5);
+    color: rgb(245, 245, 245);
+    background-color: #9B1D20;
+}
+button:hover {
+    background-color: #aa292c;
+}
+
+.hero {
+    display: none;
+}
+
+
+
+/*noticias de Corrientes*/
+
+#noticias-de-corrientes {
+    text-align: center;
+    padding: 95px 12px;
+}
+
+.noticias {
+    color: rgb(240, 240, 240);
+}
+
+ 
+#noticias-de-corrientes .container {
+    padding: 50px 0px;
+    
+}
+
+
+#noticias-de-corrientes p{
+    display: none;
+}
+#noticias-de-corrientes .corrientes {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#noticias-de-corrientes .corrientes-2 {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.corrientes:first-child:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/corrientes-1.jpg);
+    
+}
+
+.corrientes:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/corrientes-2.jpg);
+    
+}
+.corrientes:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/corrientes-3.png);
+    
+}
+
+.corrientes-2:nth-child(1) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/yacare.jpg);
+    
+}
+
+.corrientes-2:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/virgen.jpg);
+    
+}
+
+.corrientes-2:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/vialjpg.jpg);
+    
+}
+.text-acent {
+    color: #9B1D20;
+}
+
+/*noticias de Corrientes*/
+
+
+/*economía*/
+
+#economia {
+    background-color: #25283D;
+    color: rgb(250, 250, 250);
+    text-align: center;
+ }
+#economia .container {
+    padding: 50px 0px;
+    
+}
+
+
+#economia p{
+    display: none;
+}
+#economia .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#economia .carta-2 {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/nueva-ministra.jpg);
+    
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/el-drama-economico.jpg);
+    
+}
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/dolar-turista.jpg);
+    
+}
+
+
+
+.carta-2:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/guzman.jpg);
+    
+}
+
+.carta-2:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/cristina.jpg);
+    
+}
+
+.carta-2:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/peso.jpg);
+    
+}
+
+.home {font-family: lobster, sans-serif;
+    font-size: 30px;
+    color: rgba(80, 80, 80, 0.7);
+    margin: 0;
+    padding: 0;
+}
+.home:hover {
+    transition: 0.5s;
+    color: #9B1D20;
+}
+
+
+/*economía*/
+
+
+/*espacio pubicitario*/
+#espacio-publicitario {
+    display: none;
+}
+
+/*espacio publicitario*/
+
+/*curiosidades*/
+.carta-curiosidades:first-child { /*curiosidades-1*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/hueso.jpg);
+    
+}
+
+.carta-curiosidades:nth-child(2) {/*curiosidades-2*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/peaky-blinders.jpg);
+    
+}
+
+.carta-curiosidades:nth-child(3) {/*curiosidades-3*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/par-morita.jpg);
+}
+
+hr {
+    margin: 50px;
+}
+
+#curiosidades .container {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#curiosidades p{
+    display: none;
+}
+#curiosidades .carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.carta-curiosidades {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url(img/img-curiosidades.png);
+    
+}
+
+.home {font-family: lobster, sans-serif;
+    font-size: 30px;
+    color: rgba(80, 80, 80, 0.7);
+    margin: 0;
+    padding: 0;
+}
+
+.curiosidades {
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+#curiosidades .carta-curiosidades {
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/*curiodidades*/
+
+/*espacio reservado*/
+
+.espacio-reservado {
+    background-color: #9B1D20;
+    background-size: cover;
+    text-align: center;
+    height: 960px;
+    color: rgb(240, 240, 240);
+}
+
+#camaro {
+    text-align: center;
+    max-width: 1400px;
+    margin: auto; 
+    
+}
+
+.icon-acent {
+    color: rgb(134, 130, 130);
+    font-size: 15px;
+    font-weight: bold;
+}
+.iconos-auto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.motor {
+    width: 90px;
+}
+.camaro {
+    width: 400px;
+    padding-top: 100px;
+}
+
+.autos.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*espacio reservado*/
+
+/*footer*/
+
+footer .container {
+    width: 100%;
+    
+}
+footer {
+    background-color: rgba(35,35,35);
+    margin-top: 0;
+}
+
+footer div {
+    margin-left: 30px;
+}
+
+.footer-div-div {
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.acento-h5 { /*acento letras footer*/
+    font-weight: bold;
+    color: #f30024;
+}
+
+.footer-txt {
+    margin-top: 10px;
+}
+
+.logo-footer {font-family: lobster, sans-serif;
+    font-size: 30px;
+    color: rgba(80, 80, 80, 0.7);
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.logo-footer:hover {
+    transition: 0.5s;
+    color: #9B1D20;
+}
+
+/*footer*/
+
+/*final*/
+
+.final {
+    margin: 0px;
+    width: 100%;
+    padding: 10px 60px;
+    font-size: 10px;
+    
+    color: rgb(240, 240, 240);
+}
+
+.container-final {
+    width: 100%;
+    margin: auto;
+    background-color: #000;
+}
+
+.container-final p {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.container div {
+    margin-bottom: 20px;
+}
+
+/*cursor botón*/
+button:hover {
+    cursor: pointer;
+}
+
+
+
+/*desktop*/
+
+
+@media (min-width: 720px){
+    header {
+        position: fixed;
+        width: 100%;
+        background-color: rgb(200, 200, 200);
+    }
+
+    #icon_menu {
+        display: none;
+    }
+
+    .menu {
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 50px;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        background-color: rgb(200, 200, 200);
+        
+    }
+
+    header a {
+        color: #000;
+    }
+
+    .home {
+        display: none;
+    }
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background-image: url(img/banner\ -asus.jpg);
+        height: 40vw;
+        background-position: center center;
+        color: rgb(240, 240, 240);
+    }
+    
+    h2 {
+        text-align: left;
+    }
+
+    #noticias-de-corrientes .corrientes {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 20px;
+        
+    }
+
+    .noticias {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-position: center center;
+        background-size: cover;
+        
+    }
+
+    .cartas {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #economia .carta {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 20px;
+        
+    }
+
+    #curiosidades .div {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+
+    .curiosidades {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #camaro h2 {
+        text-align: left;
+    }
+
+    .camaro {
+        width: 900px;
+    }
+
+    /*espacio publicitario*/
+    
+    #espacio-publicitario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background-image: url(img/Banner-publicitario.jpg);
+        height: 40vw;
+        background-position: center center;
+        color: rgb(240, 240, 240);
+    }
+    /*espacio publicitario*/
+
+    /*espacio reservado*/
+    .iconos-auto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        
+        
+    }
+
+    .iconos-auto div {
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    .iconos-auto span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    .iconos-reservados {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+    }
+
+    .iconos-in {
+       margin: 0 70px;
+    }
+
+    .autos-div {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .autos-div h3 {
+        margin-top: 200px;
+        
+    }
+
+}
