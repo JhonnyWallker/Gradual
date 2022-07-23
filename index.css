@@ -173,10 +173,6 @@ button:hover {
     
 }
 
-
-#noticias-de-corrientes p{
-    display: none;
-}
 #noticias-de-corrientes .corrientes {
     background-position: center center;
     background-size: cover;
@@ -257,23 +253,19 @@ button:hover {
 /*noticias de Corrientes*/
 
 
-/*economía*/
+/*interior*/
 
-#economia {
+#interior {
     background-color: #25283D;
     color: rgb(250, 250, 250);
     text-align: center;
  }
-#economia .container {
+#interior .container {
     padding: 50px 0px;
     
 }
 
-
-#economia p{
-    display: none;
-}
-#economia .carta {
+#interior .carta {
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -281,7 +273,7 @@ button:hover {
     border-radius: 5px;
 }
 
-#economia .carta-2 {
+#interior .carta-2 {
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -362,7 +354,7 @@ button:hover {
 }
 
 
-/*economía*/
+/*interior*/
 
 
 /*espacio pubicitario*/
@@ -411,9 +403,6 @@ hr {
     text-align: center;
 }
 
-#curiosidades p{
-    display: none;
-}
 #curiosidades .carta {
     display: flex;
     flex-direction: column;
