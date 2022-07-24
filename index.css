@@ -21,8 +21,12 @@ h5 {color: rgb(240, 240, 240);
     padding: 0;}
 p {font-size: 1.25em;}
 ul {list-style: none;}
-a {text-decoration: none;}
-li {font-size: 1.25em;}
+a {text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;}
+li {font-size: 1.25em;
+margin-top: 10px;}
+i {display: inline-block;
+    margin-right: 10px;}
 
 
 #logo {
@@ -122,6 +126,7 @@ header a {
 header a:hover { 
     color: #9B1D20;
 }
+
 
 .hiper {
     color: rgb(200, 200, 200);
