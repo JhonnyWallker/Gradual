@@ -174,7 +174,7 @@ button:hover {
     background-position: center center;
     width: 500px;
     position: relative;
-    background-color: #7aac39;
+    
     margin: 0;
     padding: 0;
 }
@@ -185,7 +185,7 @@ button:hover {
 
 .section-hero-desktop {
     position: relative;
-    background-color: #7aac39;
+    
     margin: 0;
     padding: 0;
 }
@@ -636,7 +636,7 @@ button:hover {
 
 @media (min-width: 720px){
     header {
-        z-index: 1;
+        z-index: 20;
         position: fixed;
         width: 100%;
         background-color: rgb(200, 200, 200);
@@ -675,14 +675,29 @@ button:hover {
         display: none;
     }
     .hero {
+        
+        
         display: flex;
         align-items: center;
         justify-content: center;
         background-position: center center;
     }
 
+    img {
+        z-index: 10;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .section-hero-desktop {
+        background-color: #7aac39;
         padding-top: 150px;
+        
+    }
+
+    .encabezado-banner {
+       position: absolute;
+       bottom: 0;
     }
 
     .hero-responsive {
