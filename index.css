@@ -167,8 +167,27 @@ button:hover {
     background-color: #aa292c;
 }
 
+.hero-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    width: 500px;
+    position: relative;
+    background-color: #7aac39;
+    margin: 0;
+    padding: 0;
+}
+
 .hero {
     display: none;
+}
+
+.section-hero-desktop {
+    position: relative;
+    background-color: #7aac39;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -617,6 +636,7 @@ button:hover {
 
 @media (min-width: 720px){
     header {
+        z-index: 1;
         position: fixed;
         width: 100%;
         background-color: rgb(200, 200, 200);
@@ -658,14 +678,16 @@ button:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        background-image: url(img/banner\ -asus.jpg);
-        height: 40vw;
         background-position: center center;
-        color: rgb(240, 240, 240);
     }
-    
+
+    .section-hero-desktop {
+        padding-top: 150px;
+    }
+
+    .hero-responsive {
+        display: none;
+    }
     h2 {
         text-align: left;
     }
@@ -740,8 +762,8 @@ button:hover {
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        background-image: url(img/Banner-publicitario.jpg);
-        height: 40vw;
+        background-image: url(img/encabezado-lg-1600.png);
+        height: 105px;
         background-position: center center;
         color: rgb(240, 240, 240);
     }
