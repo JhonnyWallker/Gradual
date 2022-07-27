@@ -17,8 +17,6 @@
         <div id="ww_32b53fbaffcfc" v="1.20" loc="auto" a='{"t":"ticker","lang":"es","ids":[],"cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'><a href="https://weatherwidget.org/es/" id="ww_32b53fbaffcfc_u" target="_blank">Widget de clima html para el sitio web de Weatherwidget.org</a></div><script async src="https://srv1.weatherwidget.org/js/?id=ww_32b53fbaffcfc"></script>
         <div class="container"> 
             <div class="menu-ham">
-                
-                <a href="index.html" id="logo"><h6 class="logo-corrientes">Corrientes</h6>Gradual</a>
                 <div id="icon_menu">
                     <div class="bars__menu">
                         <span class="line1__bars-menu"></span>
@@ -28,62 +26,74 @@
                 </div>
                 <script src="script.js"></script>
             </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-house"></i>Inicio</a></li>
-                        <li><a href="#noticias-de-corrientes"><i class="fas fa-book-open"></i>Noticias de Corrientes</a></li>
-                        <li><a href="#interior"><i class="fas fa-map"></i>Interior</a></li>
-                        <li><a href="#curiosidades"><i class="fas fa-bacteria"></i>Curiosidades</a></li>
-                        <li><a href="pag.html"><i class="fas fa-dolly"></i>Cambalaches</a></li>
-                        <li><a href="pag.html"><i class="fas fa-table"></i>Clasificados</a></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-house"></i>Inicio</a></li>
+                    <li><a href="#noticias-de-corrientes"><i class="fas fa-book-open"></i>Noticias de Corrientes</a></li>
+                    <li><a href="#interior"><i class="fas fa-map"></i>Interior</a></li>
+                    <li><a href="#curiosidades"><i class="fas fa-bacteria"></i>Curiosidades</a></li>
+                    <li><a href="pag.html"><i class="fas fa-dolly"></i>Cambalaches</a></li>
+                    <li><a href="pag.html"><i class="fas fa-table"></i>Clasificados</a></li>
+                    <div>
+                        <div id="current_date"></div>
+                    <script>document.getElementById("current_date").innerHTML = Date();</script>
+                    </div>
+                </ul>
+            </nav>
+            
+        </div>
+
+        
+        
     </header>
+    
     <section class="section-hero-desktop">
-        <div class="hero">
+        <a href="index.html">
+            <img src="img/logo-gradual-blog-780x226.png">
+        </a>
+        <div>
             <img class="img-banner" src="gif/ctes2030-750x300.gif">
         </div>
     </section>
     
     <section class="hero-responsive"><img src="gif/ctes2030-500x500.gif">
     </section>
+
+    
     
     <hr>
     
     <section id="noticias-de-corrientes">
-        <span>
+        
             <div class="container">
-                <div class="img-container"></div>
-                <h2>Noticias de <span class="text-acent">Corrientes</span></h2>
+                <div class="container-div">
+                    <h2>Noticias de <span class="text-acent">Corrientes</span></h2>
+                    <div>
+                        <img src="gif/ctes2030-250x100.gif">
+                        <img src="gif/08 250x100.gif">
+                    </div>
+                </div>
+                
+                
                 <div class="noticias">
                     <div class="cartas">
                         <div class="corrientes"><!--Corrientes 1-->
                             <a class="hiper" href="pag.html">
                                 Luego de la muerte de un correntino, se prohibe el consumo de alcohol
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
                         
                         <div class="corrientes"><!--Corrientes 2-->
                             <a class="hiper" href="pag.html">
                                 Hospital Pediátrico, virus respiratorio
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
                         
                         <div class="corrientes"><!--Corrientes 3-->
                             <a class="hiper" href="pag.html">
                                 Campeonato Sudamericano de basquet adaptado
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
                     </div>
@@ -92,27 +102,18 @@
                         <div class="corrientes-2"><!--Corrientes 4-->
                             <a class="hiper" href="pag.html">
                                 Rescataron un Yacaré
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
                         
                         <div class="corrientes-2"><!--Corrientes 5-->
                             <a class="hiper" href="pag.html">
                                 Corrientes renueva su fé
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
                         
                         <div class="corrientes-2"><!--Corrientes 6-->
                             <a class="hiper" href="pag.html">
                                 Nuevo Sistema de Control Vial
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
                     </div>
@@ -128,73 +129,61 @@
         
         <section id="interior">
             <div class="container">
-                <h2>Interior</h2>
+                <div class="container-div">
+                    <h2>Interior</h2>
+                </div>
                 <div class="noticias">
                     <div class="cartas">
                         <div class="carta"><!--interior 1-->
                             <a class="hiper" href="pag.html">
                                 Habló la nueva Ministra
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>   
                             </a>
                         </div>
                         
                         <div class="carta"><!--interior 2-->
                             <a class="hiper" href="pag.html">
                                 El drama de la economía argentina
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
                         
                         <div class="carta"><!--interior 3-->
                             <a class="hiper" href="pag.html">
                                 Aumento del dolar turista
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
                         </div>
-                    </div>
+                </div>
                     <!--división del segundo grupo de cartas interior-->
-                    <div class="cartas">
-                        <div class="carta-2"><!--interior 4-->
+                <div class="cartas">
+                    <div class="carta-2"><!--interior 4-->
                             <a class="hiper" href="pag.html">
                                 El culpable es Guzmán
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
-                        </div>
+                    </div>
                         
-                        <div class="carta-2"><!--interior 5-->
+                    <div class="carta-2"><!--interior 5-->
                             <a class="hiper" href="pag.html">
                                 Picante por la crisis
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
-                        </div>
+                    </div>
                         
-                        <div class="carta-2"><!--interior 6-->
+                    <div class="carta-2"><!--interior 6-->
                             <a class="hiper" href="pag.html">
                                 El peso, el de menor valor de la región
-                                <form action="pag.html">
-                                    <button>+Info</button>
-                                </form>
                             </a>
-                        </div>
                     </div>
+                    
                 </div>
-                
                 <div>
                     <a class="home" href="#logo"><h6 class="home-h6">Corrientes</h6>Gradual</a>
                 </div>
+                </div>
             </div>
-        </span>
-    </section>
+            <div>
+                <img src="gif/redes_gob_750x250px.gif">
+                <img src="gif/ctes2030-250x250.gif">
+            </div>
+        
+        </section>
     
     <section id="espacio-publicitario">
         <div class="container"></div>
@@ -208,27 +197,18 @@
                     <div class="carta-curiosidades"><!--curiosidades 1-->
                         <a class="hiper" href="pag.html">
                             Hallan un fósil que podría ser el primer europeo
-                            <form action="pag.html">
-                                <button>+Info</button>
-                            </form>   
                         </a>
                     </div>
                     
                     <div class="carta-curiosidades"><!--curiosidades 2-->
                         <a class="hiper" href="pag.html">
                             Barrio donde se rodaron escenas de Peaky Blinders
-                            <form action="pag.html">
-                                <button>+Info</button>
-                            </form>
                         </a>
                     </div>
                     
                     <div class="carta-curiosidades"><!--curiosidades 3-->
                         <a class="hiper" href="pag.html">
                             Pat Morita no tenía idea de Karate
-                            <form action="pag.html">
-                                <button>+Info</button>
-                            </form>
                         </a>
                     </div>
                 </div>

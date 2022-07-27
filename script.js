@@ -17,5 +17,8 @@ function mostrar_menu(){
     document.querySelector(".menu").classList.toggle("mostrar_menu");
 }
 
+<script>
+document.getElementById("current_date").innerHTML = Date();
+</script>
 
 

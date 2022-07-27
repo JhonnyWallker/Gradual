@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #efe8d9;
 }
 
 h1 {font-size: 3em;}
@@ -29,27 +29,6 @@ margin-top: 10px;}
 i {display: inline-block;
     margin-right: 10px;}
 
-
-#logo {
-    display: block;
-    margin: 0;
-    padding: 25px 30px;
-    color: #9B1D20;
-    font-family: Lobster;
-    font-size: 43px;
-    text-shadow: 1px 2px 3px rgb(0, 0, 0,0.5);
-}
-
-.logo-corrientes {
-    font-family: 'Orbitron', sans-serif;
-    color: #000;
-    font-size: 15px;
-    margin-left: 40%;
-    display: flex;
-    position: relative;
-    top: 15px;
-}
-
 .bars__menu {
         position: absolute;
         right: 5px;
@@ -63,7 +42,7 @@ i {display: inline-block;
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #9B1D20;
+    background-color: #f30024;
     margin-top: 10px;
     transform-origin: 0px 100%;
     transition: all 300ms;
@@ -85,7 +64,7 @@ i {display: inline-block;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -93,7 +72,7 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(200, 200, 200);
+    background-color: #efe8d9;
     width: 100%;
 }
 
@@ -128,7 +107,7 @@ header a {
 }
 
 header a:hover { 
-    color: #9B1D20;
+    color: #f30024;
 }
 
 .hiper {
@@ -182,7 +161,7 @@ button:hover {
 
 #noticias-de-corrientes {
     text-align: center;
-    padding: 95px 12px;
+    padding: 85px 12px;
 }
 
 .noticias {
@@ -198,7 +177,7 @@ button:hover {
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    border-radius: 5px;
+    
 }
 
 #noticias-de-corrientes .corrientes-2 {
@@ -206,7 +185,7 @@ button:hover {
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    border-radius: 5px;
+    
 }
 
 .corrientes:first-child:first-child {
@@ -268,7 +247,7 @@ button:hover {
     
 }
 .text-acent {
-    color: #9B1D20;
+    color: #f30024;
 }
 
 /*noticias de Corrientes*/
@@ -277,8 +256,9 @@ button:hover {
 /*interior*/
 
 #interior {
-    background-color: #f5f5f5;
+    background-color: #000;
     text-align: center;
+    color: #efe8d9;
 }
 
 #interior .container {
@@ -290,7 +270,7 @@ button:hover {
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    border-radius: 5px;
+    
 }
 
 #interior .carta-2 {
@@ -298,7 +278,7 @@ button:hover {
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    border-radius: 5px;
+    
 }
 
 .carta:first-child {
@@ -444,7 +424,7 @@ hr {
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    border-radius: 5px;
+    
 }
 
 .carta-curiosidades {
@@ -475,7 +455,7 @@ hr {
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    border-radius: 5px;
+    
 }
 
 /*curiodidades*/
@@ -483,7 +463,7 @@ hr {
 /*espacio reservado*/
 
 .espacio-reservado {
-    background-color: #9B1D20;
+    background-color: rgb(208, 11, 34, 1);
     background-size: cover;
     text-align: center;
     height: 960px;
@@ -605,10 +585,8 @@ footer div {
     margin-bottom: 20px;
 }
 
-/*cursor botón*/
-button:hover {
-    cursor: pointer;
-}
+
+
 
 /*desktop*/
 
@@ -617,7 +595,7 @@ button:hover {
         z-index: 20;
         position: fixed;
         width: 100%;
-        background-color: rgb(200, 200, 200);
+        background-color: #efe8d9;
     }
 
     #icon_menu {
@@ -625,10 +603,9 @@ button:hover {
     }
 
     .menu {
+        width: 100%;
         height: 100%;
-        position: relative;
-        top: 0;
-        right: 50px;
+        
     }
 
     header .container {
@@ -639,10 +616,13 @@ button:hover {
 
     header nav ul {
         flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-        background-color: rgb(200, 200, 200);
-        
+        padding-bottom: 20px;
+        background-color: #efe8d9;
+        justify-content: space-between;
+    }
+
+    #current_date {
+        padding-top: 15px;
     }
 
     header a {
@@ -652,24 +632,22 @@ button:hover {
     .home {
         display: none;
     }
+
     
-    .hero {
+    
+    .section-hero-desktop {
+        background-color: #efe8d9;
+        padding-top: 150px;
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        margin: 0 10%;
         justify-content: center;
         background-position: center center;
+        
     }
 
-    .img-banner {
-        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.517);
-        z-index: 10;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .section-hero-desktop {
-        background-color: #f5f5f5;
-        padding-top: 150px;
+    .section-hero-desktop a {
+        padding-top: 5%;
     }
 
     .hero-responsive {
@@ -678,6 +656,12 @@ button:hover {
     
     h2 {
         text-align: left;
+    }
+
+    .container-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     #noticias-de-corrientes .corrientes {
