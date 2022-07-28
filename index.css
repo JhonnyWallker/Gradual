@@ -110,31 +110,6 @@ header a:hover {
     color: #f30024;
 }
 
-.hiper {
-    color: rgb(200, 200, 200);
-    font-size: 1.5em;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-.hiper:hover {
-    color: #aa292c;
-    cursor: pointer;
-}
-
-button {
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 1px solid rgb(0, 0, 0,0.5);
-    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.5);
-    color: rgb(245, 245, 245);
-    background-color: #9B1D20;
-}
-button:hover {
-    background-color: #aa292c;
-}
 
 .hero-responsive {
     display: flex;
@@ -180,9 +155,6 @@ button:hover {
     
 }
 
-
-
-
 .text-acent {
     color: #f30024;
 }
@@ -190,8 +162,10 @@ button:hover {
 /*noticias de Corrientes*/
 
 
-/*interior*/
 
+
+
+/*interior*/
 #interior {
     background-color: #f5f5f5;
     text-align: center;
@@ -207,143 +181,21 @@ button:hover {
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    
 }
-
-#interior .carta-2 {
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
-    
-}
-
-.carta:first-child {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/nueva-ministra.jpg);
-    
-}
-
-.carta:nth-child(2) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/el-drama-economico.jpg);
-    
-}
-.carta:nth-child(3) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/dolar-turista.jpg);
-    
-}
-
-.carta-2:first-child {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/guzman.jpg);
-    
-}
-
-.carta-2:nth-child(2) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/cristina.jpg);
-    
-}
-
-.carta-2:nth-child(3) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/peso.jpg);
-    
-}
-
-.home {font-family: lobster, sans-serif;
-    font-size: 30px;
-    color: rgba(80, 80, 80, 0.7);
-    margin: 0;
-    padding: 0;
-}
-.home:hover {
-    transition: 0.5s;
-    color: #9B1D20;
-}
-
-.home-h6 {
-    font-family: 'Orbitron',sans-serif;
-    color: #000;
-    font-size: 10px;
-    margin-left: 48%;
-    display: flex;
-    position: relative;
-    top: 10px;
-    color: rgba(80, 80, 80, 0.7);
-}
-.home-h6:hover {
-    transition: 0.5s;
-    color: #000;
-}
-
-
 /*interior*/
+
+
 
 
 /*espacio pubicitario*/
 #espacio-publicitario {
     display: none;
 }
-
 /*espacio publicitario*/
 
+
+
 /*curiosidades*/
-.carta-curiosidades:first-child { /*curiosidades-1*/
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/hueso.jpg);
-    
-}
-
-.carta-curiosidades:nth-child(2) {/*curiosidades-2*/
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/peaky-blinders.jpg);
-    
-}
-
-.carta-curiosidades:nth-child(3) {/*curiosidades-3*/
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/par-morita.jpg);
-}
-
 hr {
     margin: 50px;
 }
@@ -364,23 +216,6 @@ hr {
     
 }
 
-.carta-curiosidades {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ) 
-    ,url(img/img-curiosidades.png);
-    
-}
-
-.home {font-family: lobster, sans-serif;
-    font-size: 30px;
-    color: rgba(80, 80, 80, 0.7);
-    margin: 0;
-    padding: 0;
-}
-
 .curiosidades {
     color: rgb(240, 240, 240);
     text-align: center;
@@ -394,8 +229,9 @@ hr {
     margin: 20px;
     
 }
-
 /*curiodidades*/
+
+
 
 /*espacio reservado*/
 
@@ -558,6 +394,7 @@ footer {
 
     #current_date {
         padding-top: 15px;
+        
     }
 
     header a {
@@ -589,203 +426,179 @@ footer {
         display: none;
     }
     
-    a{
-        text-decoration: none;
+    .container {
+        width: 100%;
+        max-width: 1250px;
+        padding: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    
+    a {  text-decoration: none;
         color: #000;
+    }
+
+    a:hover {
+        color: #f30024;
+        
     }
     
     h2 {
         text-align: left;
     }
 
-    .container-div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .seccion-der-izq-cartas {
-        display: flex;
-        flex-direction: row;
-        
-    }
-
-    .seccion-izq-cartas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .seccion-der-cartas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .carta-505x505 {
-        width: 505px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .carta-505x505 a {
+    .carta-500x500-1 a,
+    .carta-500x500-1 h3,
+    .carta-500x500-2 a,
+    .carta-500x500-2 h3 {
         text-align: left;
     }
 
     .carta-250x250 {
-        width: 250px;
+        margin-right: 3px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-right: 5px;
     }
 
-    .carta-250x250 a {
+    .carta-250x250 a
+     {
         text-align: left;
     }
 
-    .pareja-carta-250x250 {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .publicidad-250x100 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .publicidad-250x100 img {
-        padding-bottom: 5px;
-    }
-
-    .seccion-con-publicidad {
+    .pareja-de-cartas-250x250-1 {
         display: flex;
         flex-direction: row;
     }
 
-    .publicidad-750x250 {
+    .pareja-de-cartas-250x250-2 {
         display: flex;
         flex-direction: row;
-        justify-content: left;
-        
-    }
-
-    .publicidad-750x250 img {
-        padding: 5px;
-    }
-
-    #interior .seccion-con-publicidad {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     
 
-    #noticias-de-corrientes .corrientes {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 50px;
-        margin: 20px;
+    #noticias-de-corrientes .titulo {
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
-    .noticias {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background-position: center center;
-        background-size: cover;
+    #noticias-de-corrientes .carta-500x500-1 {
+        grid-column-start: 1;
     }
 
-    .cartas {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
+    #noticias-de-corrientes .carta-500x500-2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
     }
 
-    #economia .carta {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 50px;
-        margin: 20px;
-    }
-
-    #curiosidades .div {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 50px;
-        margin: 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .curiosidades {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    #camaro  {
-        
-        text-align: left;
-        max-width: 1250px;
-    }
-
-    .camaro {
-        width: 900px;
-    }
-
-    /*espacio publicitario*/
     
-    #espacio-publicitario {
+
+    #noticias-de-corrientes aside {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: #f5f5f567;
+        border-radius: 5px;
+    }
+
+    #interior .titulo {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #interior .carta-500x500-1 {
+        grid-column-start: 1;
+        text-align: left;
+    }
+
+    #interior .carta-500x500-2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    
+
+    
+
+    #interior aside {
+        text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        background-image: url(img/encabezado6-4.png);
-        height: 105px;
-        background-position: center center;
-        color: rgb(240, 240, 240);
-    }
-    
-    /*espacio publicitario*/
-
-    /*espacio reservado*/
-    
-
-    
-
-    .noticias {
-        background-color: #ffffff;
-        border-style: groove;
-        border-color: rgba(0, 0, 0, 0.303);
+        color: #f5f5f5a8;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: #cdc4c45b;
         border-radius: 5px;
-        border-width: 1px;
     }
 
-    .autos-div {
+    #curiosidades .titulo {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #curiosidades .carta-500x500-1 {
+        grid-column-start: 1;
+    }
+
+    #curiosidades .carta-500x500-2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    
+
+    #curiosidades aside {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: #f5f5f567;
+        border-radius: 5px;
+    }
+
+    #curiosidades aside {
+        text-align: center;
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #f5f5f5a8;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: #cdc4c45b;
+        border-radius: 5px;
+    }
+
+    #camaro {
+        max-width: 1250px;
+    }
+
+    .titulo-reservado {
+        grid-column-start: 1;
+        grid-column-end: 5;
         text-align: left;
     }
 
-    .autos-div h3 {
-        margin-top: 200px;
+    .img-reservado {
+        
+        width: 500px;
     }
 
-    .home-footer-h6{
-        display: flex;
-        position: relative;
-        margin-left: 3%;
+    .txt-reservado {
+        display: inline-block;
+        width: 30%;
     }
+
+    .txt-img {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
