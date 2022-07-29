@@ -23,13 +23,17 @@ padding: 0;}
 p {font-size: 1.25em;}
 ul {list-style: none;}
 a {text-decoration: none;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+    color: #000;}
 li {font-size: 1.25em;
 margin-top: 10px;}
 i {display: inline-block;
     margin-right: 10px;}
 
-
+a:hover {
+    color: #f30024;
+    text-decoration: underline;
+}
 
 .bars__menu {
         z-index: 40;
@@ -49,21 +53,6 @@ i {display: inline-block;
     margin-top: 10px;
     transform-origin: 0px 100%;
     transition: all 300ms;
-}
-
-.activeline1__bars-menu {
-    transform: rotate(45deg)
-    translate(0px, 1px);
-}
-
-.activeline2__bars-menu {
-    opacity: 0;
-    margin-left: -30px;
-}
-
-.activeline3__bars-menu {
-    transform: rotate(-45deg)
-    translate(-2px, 2px);
 }
 
 .container {
@@ -119,7 +108,6 @@ header a:hover {
     display: none;
 }
 
-
 .hero-responsive {
     display: flex;
     flex-direction: column;
@@ -140,145 +128,66 @@ header a:hover {
 
 /*noticias de Corrientes*/
 
-#noticias-de-corrientes {
+#noticias-de-corrientes,
+#interior,
+#curiosidades {
+    display: none;
+}
+
+#noticias-de-corrientes-mobile,
+#interior-mobile,
+#curiosidades-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 85px 12px;
+
 }
 
-.noticias {
-    color: rgb(240, 240, 240);
+#interior-mobile {
+    background-color: #f5f5f5;
 }
 
-#noticias-de-corrientes .container {
-    padding: 50px 0px;
-}
-
-#noticias-de-corrientes  {
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
+.carta-375x375 p {
+    justify-content: center center;
+    text-align: left;
+    padding-left: 55px;
+    width: 100%;
     
+    
+}
+
+.carta-375x375 h3 {
+    font-size: 20px;
 }
 
 .text-acent {
     color: #f30024;
 }
 
-/*noticias de Corrientes*/
 
-
-
-
-
-/*interior*/
-#interior {
-    background-color: #f5f5f5;
-    text-align: center;
-    color: #000;
-}
-
-#interior .container {
-    padding: 50px 0px;
-}
-
-#interior .carta {
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
-}
-/*interior*/
-
-
-
-
-/*espacio pubicitario*/
-#espacio-publicitario {
-    display: none;
-}
-/*espacio publicitario*/
-
-
-
-/*curiosidades*/
 hr {
     margin: 50px;
 }
 
-#curiosidades .container {
-    padding: 50px 0px;
-    text-align: center;
-}
-
-#curiosidades .carta {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
-    
-}
-
-.curiosidades {
-    color: rgb(240, 240, 240);
-    text-align: center;
-}
-
-#curiosidades .carta-curiosidades {
-    height: 250px;
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
-    
-}
-/*curiodidades*/
-
-
-
-/*espacio reservado*/
-
 .espacio-reservado {
-    background-color: rgb(208, 11, 34, 1);
+    background-color: #f30024;
     background-size: cover;
     text-align: center;
     height: 600px;
     color: rgb(240, 240, 240);
 }
 
-#camaro {
-    text-align: center;
-    max-width: 1400px;
-    margin: auto; 
+
+    
+
+
+.img-reservado img {
+    width: 400px;
     
 }
 
-.icon-acent {
-    color: rgb(134, 130, 130);
-    font-size: 15px;
-    font-weight: bold;
-}
-.iconos-auto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.motor {
-    width: 90px;
-}
-.camaro {
-    width: 400px;
-    padding-top: 100px;
-}
 
-.autos.div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 /*espacio reservado*/
 
@@ -367,7 +276,7 @@ footer {
 
 /*desktop*/
 
-@media (min-width: 1530px){
+@media (min-width: 720px){
     header {
         z-index: 20;
         position: fixed;
@@ -376,13 +285,28 @@ footer {
         background-color: #efe8d9;
     }
 
+    #noticias-de-corrientes-mobile,
+    #interior-mobile,
+    #curiosidades-mobile {
+    display: none;
+    }
+
+    #noticias-de-corrientes,
+    #interior,
+    #curiosidades {
+    display: block;
+    }
+
     #icon_menu {
         display: none;
     }
 
     #current_date {
         display: block;
+        width: 100%;
     }
+
+    
 
     .menu {
         display: flex;
@@ -390,6 +314,7 @@ footer {
         justify-content: space-between;
         width: 100%;
         height: 100%;
+        background-color: #efe8d9;
         
     }
 
@@ -401,6 +326,7 @@ footer {
     }
 
     #current_date {
+        width: 100%;
         padding-top: 40px;
         font-weight: bold;
     }
@@ -551,6 +477,13 @@ footer {
         background-color: #cdc4c45b;
         border-radius: 5px;
     }
+
+    .publicidad-750x250 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
     /*estilos de interior*/
 
     /*estilos de curiosidades*/
@@ -604,9 +537,8 @@ footer {
         text-align: left;
     }
 
-    .img-reservado {
-        
-        width: 500px;
+    .img-reservado img {
+        width: 1000px;
     }
 
     .txt-reservado {
