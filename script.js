@@ -7,9 +7,9 @@ var line3__bars = document.querySelector(".line3__bars-menu");
 
 
 function animateBars(){
-    line1__bars.classList.toggle("activeline1__bars-menu");
-    line2__bars.classList.toggle("activeline2__bars-menu");
-    line3__bars.classList.toggle("activeline3__bars-menu");
+    line1__bars.classList.toggle(".activeline1__bars-menu");
+    line2__bars.classList.toggle(".activeline2__bars-menu");
+    line3__bars.classList.toggle(".activeline3__bars-menu");
     
 } 
 
@@ -17,8 +17,6 @@ function mostrar_menu(){
     document.querySelector(".menu").classList.toggle("mostrar_menu");
 }
 
-<script>
-document.getElementById("current_date").innerHTML = Date();
-</script>
+
 
 
