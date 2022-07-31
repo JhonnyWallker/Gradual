@@ -12,8 +12,9 @@ body {
     background-color: #efe8d9;
 }
 
+/*mobile*/
 h1 {font-size: 3em;}
-h2 {font-size: 2em;}
+h2,
 h3 {font-size: 2em;}
 h5 {color: rgb(240, 240, 240);
     margin: 0;
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .container {
-    max-width: 1255px;
+    max-width: 1250px;
     margin: auto;
 }
 
@@ -120,14 +121,11 @@ header a:hover {
     padding: 0;
 }
 
-
-
 .section-hero-desktop {
     display: none;
 }
 
 /*noticias de Corrientes*/
-
 #noticias-de-corrientes,
 #interior,
 #curiosidades {
@@ -141,7 +139,6 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
 
 #interior-mobile {
@@ -153,8 +150,6 @@ header a:hover {
     text-align: left;
     padding-left: 55px;
     width: 100%;
-    
-    
 }
 
 .carta-375x375 h3 {
@@ -165,7 +160,6 @@ header a:hover {
     color: #f30024;
 }
 
-
 hr {
     margin: 50px;
 }
@@ -174,39 +168,30 @@ hr {
     background-color: #f30024;
     background-size: cover;
     text-align: center;
-    height: 600px;
+    height: 700px;
     color: rgb(240, 240, 240);
 }
 
-
-    
-
+.espacio-reservado h2 {
+    color: #000;
+    font-weight: bold;
+}
 
 .img-reservado img {
     width: 400px;
-    
 }
-
-
-
 /*espacio reservado*/
 
 /*footer*/
-
 footer .container {
     width: 100%;
-    
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
+
 footer {
     background-color: rgba(35,35,35);
-    margin-top: 0;
-}
-
-
-
-.footer-div-div {
-    padding-top: 40px;
-    padding-bottom: 15px;
 }
 
 .acento-h5 { /*acento letras footer*/
@@ -217,37 +202,9 @@ footer {
 .footer-txt {
     margin-top: 10px;
 }
-
-.home-footer-h6 { 
-    font-family: 'Orbitron',sans-serif;
-    color: #000;
-    font-size: 10px;
-    margin-left: 9%;
-    display: flex;
-    position: relative;
-    top: 10px;
-    color: rgba(80, 80, 80, 0.7);
-}
-.logo-footer {font-family: lobster, sans-serif;
-    font-size: 30px;
-    color: rgba(80, 80, 80, 0.7);
-    margin: 0;
-    padding: 0;
-}
-.logo-footer:hover {
-    transition: 0.5s;
-    color: #9B1D20;
-}
-
-.home-footer-h6:hover {
-    transition: 0.5s;
-    color: #000;
-}
-
 /*footer*/
 
 /*final*/
-
 .final {
     margin: 0px;
     width: 100%;
@@ -257,22 +214,10 @@ footer {
 }
 
 .container-final {
-    width: 100%;
-    margin: auto;
+    
     background-color: #000;
 }
-
-.container-final p {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.container div {
-    margin-bottom: 20px;
-}
-
-
-
+/*mobile*/
 
 /*desktop*/
 
@@ -285,28 +230,30 @@ footer {
         background-color: #efe8d9;
     }
 
+    .container {
+        width: 100%;
+        max-width: 1250px;
+        padding: 0;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
     #noticias-de-corrientes-mobile,
     #interior-mobile,
-    #curiosidades-mobile {
+    #curiosidades-mobile,
+    #icon_menu,
+    .hero-responsive {
     display: none;
     }
 
     #noticias-de-corrientes,
     #interior,
-    #curiosidades {
+    #curiosidades,
+    #current_date {
     display: block;
     }
-
-    #icon_menu {
-        display: none;
-    }
-
-    #current_date {
-        display: block;
-        width: 100%;
-    }
-
-    
 
     .menu {
         display: flex;
@@ -315,7 +262,6 @@ footer {
         width: 100%;
         height: 100%;
         background-color: #efe8d9;
-        
     }
 
     header nav ul {
@@ -323,6 +269,7 @@ footer {
         flex-direction: row;
         padding-bottom: 20px;
         background-color: #efe8d9;
+        
     }
 
     #current_date {
@@ -340,21 +287,11 @@ footer {
         text-decoration: underline;
     }
     
-    a:hover {
-        color: #f30024;
-    }
-
-    a {  text-decoration: none;
+    a { text-decoration: none;
         color: #000;
     }
 
-    p {
-        font-weight: bold;
-    }
-
-    .home {
-        display: none;
-    }
+    p { font-weight: bold;}
 
     .section-hero-desktop {
         background-color: #efe8d9;
@@ -370,52 +307,35 @@ footer {
         padding-top: 5%;
     }
 
-    .hero-responsive {
-        display: none;
-    }
-    
-    .container {
-        width: 100%;
-        max-width: 1250px;
-        padding: 0;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, auto);
-    }
-    
-    h2 {
-        text-align: left;
-        
-    }
-
     .carta-500x500-1 a,
     .carta-500x500-1 h3,
     .carta-500x500-2 a,
-    .carta-500x500-2 h3 {
+    .carta-500x500-2 h3,
+    .carta-250x250 a,
+    h2 {
         text-align: left;
     }
 
+    .carta-500x500-1,
+    .carta-500x500-2,
     .carta-250x250 {
-        margin-right: 3px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    
+    .carta-250x250 {
+        margin-right: 5px;
         display: flex;
         flex-direction: column;
     }
 
-    .carta-250x250 a
-     {
-        text-align: left;
-    }
-
-    .pareja-de-cartas-250x250-1 {
-        display: flex;
-        flex-direction: row;
-    }
-
+    .pareja-de-cartas-250x250-1,
     .pareja-de-cartas-250x250-2 {
         display: flex;
         flex-direction: row;
     }
+
+    
 
     /*estilos de noticias de corrientes*/
 
@@ -426,6 +346,7 @@ footer {
 
     #noticias-de-corrientes .carta-500x500-1 {
         grid-column-start: 1;
+        
     }
 
     #noticias-de-corrientes .carta-500x500-2 {
@@ -443,7 +364,6 @@ footer {
         background-color: #f5f5f567;
         border-radius: 5px;
     }
-
     /*estilos de noticias de corrientes*/
 
     /*estilos de interior*/
@@ -527,8 +447,11 @@ footer {
     }
     /*estilos de curiosidades*/
 
-    #camaro {
-        max-width: 1250px;
+    #camaro,
+    .final {
+        width: 100%;
+        max-width: 1000px;
+        padding: 0;
     }
 
     .titulo-reservado {
@@ -549,6 +472,17 @@ footer {
     .txt-img {
         display: flex;
         flex-direction: row;
+    }
+
+    .ilustro {
+        display: inline-block;
+        width: 100%;
+        
+    }
+
+    .ilustro img {
+        width: 700px;
+        margin-left: 25%;
     }
 
 }

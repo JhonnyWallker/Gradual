@@ -6,101 +6,507 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Arvo:ital,wght@1,700&family=Barlow:wght@100&family=Bebas+Neue&family=Cabin+Sketch&family=Comfortaa:wght@700&family=Fjalla+One&family=Kanit:wght@700&family=Lobster&family=Oswald:wght@700&family=PT+Sans+Narrow:wght@400;700&family=Prompt:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;1,300;1,400&family=Russo+One&family=Splash&family=Teko:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <title>Gradual</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Arvo:ital,wght@1,700&family=Barlow:wght@100&family=Bebas+Neue&family=Cabin+Sketch&family=Comfortaa:wght@700&family=Fjalla+One&family=Kanit:wght@700&family=Lobster&family=Orbitron&family=Oswald:wght@700&family=PT+Sans+Narrow:wght@400;700&family=Prompt:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;1,300;1,400&family=Russo+One&family=Splash&family=Teko:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<title>CorrientesGradual</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" id="logo">Gradual..!!</a>
+    <header>
+        <div id="ww_32b53fbaffcfc" v="1.20" loc="auto" a='{"t":"ticker","lang":"es","ids":[],"cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'><a href="https://weatherwidget.org/es/" id="ww_32b53fbaffcfc_u" target="_blank">Widget de clima html para el sitio web de Weatherwidget.org</a></div><script async src="https://srv1.weatherwidget.org/js/?id=ww_32b53fbaffcfc"></script>
+        <div class="container"> 
+            <div class="menu-ham">
+                <div id="icon_menu">
+                    <div class="bars__menu">
+                        <span class="line1__bars-menu"></span>
+                        <span class="line2__bars-menu"></span>
+                        <span class="line3__bars-menu"></span>
+                    </div>
+                </div>
+                    <script src="script.js"></script>
+                </div>
+        </div>
+        <div class="menu">
             <nav>
-                <a href="index.html">Inicio</a>
-                <a href="#noticias-de-corrientes">República de Corrientes</a>
-                <a href="#economia">Economía</a>
-                <a href="#curiosidades">Curiosidades</a>
-                <a href="pag.html">Cambalache</a>
-                <a href="pag.html">Clasificados</a>
+                <ul>
+                    <li><a title="Inicio" href="index.html">Inicio</a></li>
+                    <li><a title="Noticias de Corrientes" href="#noticias-de-corrientes">Noticias de Corrientes</a></li>
+                    <li><a title="Interior" href="#interior">Interior</a></li>
+                    <li><a title="Curiosidades" href="#curiosidades">Curiosidades</a></li>
+                    <li><a title="Cambalaches" href="pag.html">Cambalaches</a></li>
+                    <li><a title="Clasificados" href="pag.html">Clasificados</a></li>
+                    
+                </ul>
+                
             </nav>
+            <div>
+                <div title="Fecha y Hora" id="current_date"></div>
+                <script>document.getElementById("current_date").innerHTML = Date();</script>
+            </div>
+            
         </div>
     </header>
     
-    <section class="hero">
-        
-    </section>
-    <hr>
-    <section id="noticias-de-corrientes">
-        <div class="container">
-            <div class="img-container"></div>
-            
-            <div class="noticias">
-                
-                    
-                
-                
-            </div>
-            <div>
-                <a class="home" href="#logo">Gradual..!!</a>
-            </div>
+    <section class="section-hero-desktop">
+        <a title="Corrientes Gradual" href="index.html">
+            <img src="img/logo-gradual-blog-780x226.png">
+        </a>
+        <div>
+            <img title="Corrientes somos todos" class="img-banner" src="gif/ctes2030-750x300.gif">
         </div>
-    </section>
-    <hr>
-    <section id="economia">
-        
-            <div>
-                <a class="home" href="#logo">Gradual..!!</a>
-            </div>
-        
-    </section>
-    <hr>
-    <section id="espacio-publicitario">
-        <div class="container">
-            
-        </div>
-    </section>
-    <hr>
-    <section id="curiosidades">
-        
     </section>
     
-    <section class="espacio-reservado">
-        
-        
-            
-            
-            
-        
-
+    <section class="hero-responsive">
+        <a href="index.html">
+            <img src="img/logo-gradual-375x190.png">
+        </a>
+        <div>
+            <img class="img-banner" src="gif/ctes2030-375x375.gif">
+        </div>
     </section>
 
-    <footer>
+    
+    
+    <hr>
+    
+    
+    <!--Noticias de Corrientes-->
+    <section id="noticias-de-corrientes">
+        
+            <div class="container">
+                    <div class="titulo">
+                            <h2>Noticias de <span class="text-acent">Corrientes</span></h2>
+                    </div>
+                    <div class="carta-500x500-1">
+                        <a href="pag.html">
+                            <img src="img/error-404-510x510.jpg">
+                            <h3 title="Título de Noticia">Título de Noticia</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        </a>
+                    </div>
+                    <div class="pareja-de-cartas-250x250-1">
+                        <div class="carta-250x250">
+                            <a href="pag.html">
+                                <img src="img/error-404-250x250.jpg">
+                                <h4 title="Título de Noticia">Título de Noticia</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus 
+                                    labore quae nobis eveniet. Pariatur eum eius eveniet maxime perferendis, 
+                                    quis aperiam error iste voluptates tenetur nulla, esse, sit suscipit.</p>
+                            </a>
+                        </div>
+                        <div class="carta-250x250">
+                            <a href="pag.html">
+                                <img src="img/error-404-250x250.jpg">
+                                <h4 title="Título de Noticia">Título de Noticia</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro, 
+                                    voluptate autem cum adipisci explicabo quis qui! Animi maxime magni, aperiam 
+                                    laudantium nisi voluptatibus perspiciatis asperiores odio aspernatur non eaque?</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pareja-de-cartas-250x250-2">
+                        <div class="carta-250x250">
+                            <a href="pag.html">
+                                <img src="img/error-404-250x250.jpg">
+                                <h4 title="Título de Noticia">Título de Noticia</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad 
+                                    fugiat accusamus, quas corporis ipsa soluta. Saepe quasi autem ipsum 
+                                    perferendis veritatis dolorem nostrum consectetur cupiditate exercitationem 
+                                    mollitia! Dignissimos, corporis!</p>
+                            </a>
+                        </div>
+                        <div class="carta-250x250">
+                            <a href="pag.html">
+                                <img src="img/error-404-250x250.jpg">
+                                <h4 title="Título de Noticia">Título de Noticia</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero, 
+                                    accusantium repellendus sunt fugiat dolor assumenda saepe eius id facere? 
+                                    Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carta-500x500-2">
+                        <a href="pag.html">
+                            <img src="img/error-404-510x510.jpg">
+                            <h3 title="Título de Noticia">Título de Noticia</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        </a>
+                    </div>
+                        
+                    
+                        
+                    <aside><!--espacion publicitario-->
+                        <img title="Corrientes somos todos" src="gif/ctes2030-250x100.gif">
+                        <img title="Corrientes somos todos" src="gif/08 250x100.gif">
+                    </aside><!--espacion publicitario-->
+            </div>
+    </section>        
+        <!--Noticias de Corrientes-->
+        
+        <!--Noticias de Corrientes mobile-->
+    <section id="noticias-de-corrientes-mobile">
+        <div class="container-mobile">
+            <div class="titulo">
+                    <h2>Noticias de <span class="text-acent">Corrientes</span></h2>
+            </div>
+            <div class="carta-375x375">
+                <a href="pag.html">
+                    <img src="img/error-404-375x375.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            <div class="carta-375x375">
+                <a href="pag.html">
+                    <img src="img/error-404-375x375.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            <div class="carta-375x375">
+                <a href="pag.html">
+                    <img src="img/error-404-375x375.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            <div class="carta-375x375">
+                <a href="pag.html">
+                    <img src="img/error-404-375x375.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            <div class="carta-375x375">
+                <a href="pag.html">
+                    <img src="img/error-404-375x375.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            <div class="carta-375x375">
+                <a href="pag.html">
+                    <img src="img/error-404-375x375.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            
+                
+            
+                
+            <aside><!--espacion publicitario-->
+                <img title="Corrientes somos todos" src="gif/ctes2030-250x100.gif">
+                <img title="Corrientes somos todos" src="gif/08 250x100.gif">
+            </aside><!--espacion publicitario-->
+    </div>
+    </section>    
+      <!--noticias de Corrientes mobile-->  
+        
+        <hr>
+        
+    <!--Interior-->
+    <section id="interior">
+        
         <div class="container">
-            <div>
-                <div class="footer-div-div">
-                    <a class="logo-footer" href="#logo">Gradual..!!</a>
+                <div class="titulo">
+                        <h2>Interior</h2>
                 </div>
-                <div class="footer-txt">
-                    <h5 class="acento-h5">Dirección</h5>
-                    <h5>Calle Sin Nombre 0000 - Corrientes - Argentina</h5>
-                    <h5>Institucional</h5>
-                    <h5>Mediakit</h5>
+                <div class="carta-500x500-1">
+                    <a href="pag.html">
+                        <img src="img/error-404-510x510.jpg">
+                        <h3 title="Título de Noticia">Título de Noticia</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </a>
                 </div>
-                <div class="footer-txt">
-                    <h5 class="acento-h5">Contacto</h5>
-                    <h5>Comercial: comercial@gradual.com</h5>
-                    <h5>Redacción: personal@gradual.com</h5>
-                    <h5>Tel.: 3794 666666</h5> 
+                <div class="pareja-de-cartas-250x250-1">
+                    <div class="carta-250x250">
+                        <a href="pag.html">
+                            <img src="img/error-404-250x250.jpg">
+                            <h4 title="Título de Noticia">Título de Noticia</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus 
+                                labore quae nobis eveniet. Pariatur eum eius eveniet maxime perferendis, 
+                                quis aperiam error iste voluptates tenetur nulla, esse, sit suscipit.</p>
+                        </a>
+                    </div>
+                    <div class="carta-250x250">
+                        <a href="pag.html">
+                            <img src="img/error-404-250x250.jpg">
+                            <h4 title="Título de Noticia">Título de Noticia</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro, 
+                                voluptate autem cum adipisci explicabo quis qui! Animi maxime magni, aperiam 
+                                laudantium nisi voluptatibus perspiciatis asperiores odio aspernatur non eaque?</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
+                <div class="pareja-de-cartas-250x250-2">
+                    <div class="carta-250x250">
+                        <a href="pag.html">
+                            <img src="img/error-404-250x250.jpg">
+                            <h4 title="Título de Noticia">Título de Noticia</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad 
+                                fugiat accusamus, quas corporis ipsa soluta. Saepe quasi autem ipsum 
+                                perferendis veritatis dolorem nostrum consectetur cupiditate exercitationem 
+                                mollitia! Dignissimos, corporis!</p>
+                        </a>
+                    </div>
+                    <div class="carta-250x250">
+                        <a href="pag.html">
+                            <img src="img/error-404-250x250.jpg">
+                            <h4 title="Título de Noticia">Título de Noticia</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero, 
+                                accusantium repellendus sunt fugiat dolor assumenda saepe eius id facere? 
+                                Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="carta-500x500-2">
+                    <a href="pag.html">
+                        <img src="img/error-404-510x510.jpg">
+                        <h3 title="Título de Noticia">Título de Noticia</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </a>
+                </div>
+                <aside><!--espacion publicitario-->
+                    <h3>Publicidad</h3>
+                </aside><!--espacion publicitario-->
         </div>
-        <div class="container-final">
-            <div class="final">
-                <p>Copyright 2022-GRADUAL | Todos los<br> derechos reservados</p>
-            </div>
+        <div class="publicidad-750x250">
+            <img title="Corrientes somos todos" src="gif/redes_gob_750x250px.gif">
+            <img title="Corrientes somos todos" src="gif/ctes2030-250x250.gif">
         </div>
         
-    </footer>
+</section>
+<!--Interior-->
 
+<!--interior mobile-->
+
+<section id="interior-mobile">
+    <div class="container-mobile">
+        <div class="titulo">
+                <h2>Interior</h2>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <aside><!--espacion publicitario-->
+            <img src="gif/ctes2030-250x100.gif">
+            <img src="gif/08 250x100.gif">
+        </aside><!--espacion publicitario-->
+</div>
+</section>
+<!--inerior mobile-->
+
+<hr>
+    
+<!--Curiosidades-->
+<section id="curiosidades">
+        
+    <div class="container">
+            <div class="titulo">
+                    <h2>Curiosidades</h2>
+            </div>
+            <div class="carta-500x500-1">
+                <a href="pag.html">
+                    <img src="img/error-404-510x510.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            <div class="pareja-de-cartas-250x250-1">
+                <div class="carta-250x250">
+                    <a href="pag.html">
+                        <img src="img/error-404-250x250.jpg">
+                        <h4 title="Título de Noticia">Título de Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus 
+                            labore quae nobis eveniet. Pariatur eum eius eveniet maxime perferendis, 
+                            quis aperiam error iste voluptates tenetur nulla, esse, sit suscipit.</p>
+                    </a>
+                </div>
+                <div class="carta-250x250">
+                    <a href="pag.html">
+                        <img src="img/error-404-250x250.jpg">
+                        <h4 title="Título de Noticia">Título de Noticia</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro, 
+                            voluptate autem cum adipisci explicabo quis qui! Animi maxime magni, aperiam 
+                            laudantium nisi voluptatibus perspiciatis asperiores odio aspernatur non eaque?</p>
+                    </a>
+                </div>
+            </div>
+            <div class="pareja-de-cartas-250x250-2">
+                <div class="carta-250x250">
+                    <a href="pag.html">
+                        <img src="img/error-404-250x250.jpg">
+                        <h4 title="Título de Noticia">Título de Noticia</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad 
+                            fugiat accusamus, quas corporis ipsa soluta. Saepe quasi autem ipsum 
+                            perferendis veritatis dolorem nostrum consectetur cupiditate exercitationem 
+                            mollitia! Dignissimos, corporis!</p>
+                    </a>
+                </div>
+                <div class="carta-250x250">
+                    <a href="pag.html">
+                        <img src="img/error-404-250x250.jpg">
+                        <h4 title="Título de Noticia">Título de Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero, 
+                            accusantium repellendus sunt fugiat dolor assumenda saepe eius id facere? 
+                            Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>
+                    </a>
+                </div>
+            </div>
+            <div class="carta-500x500-2">
+                <a href="pag.html">
+                    <img src="img/error-404-510x510.jpg">
+                    <h3 title="Título de Noticia">Título de Noticia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </a>
+            </div>
+            <aside><!--espacion publicitario-->
+                <h3>Publicidad</h3>
+            </aside><!--espacion publicitario-->
+    </div>
+</section>
+<!--curiosidades-->
+
+
+<!--curiosidades mobile-->
+
+<section id="curiosidades-mobile">
+    <div class="container-mobile">
+        <div class="titulo">
+                <h2>Curiosidades</h2>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <div class="carta-375x375">
+            <a href="pag.html">
+                <img src="img/error-404-375x375.jpg">
+                <h3 title="Título de Noticia">Título de Noticia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </a>
+        </div>
+        <aside><!--espacion publicitario-->
+            <img src="gif/ctes2030-250x100.gif">
+            <img src="gif/08 250x100.gif">
+        </aside><!--espacion publicitario-->
+</div>
+</section> 
+<!--curiosidades mobile-->    
+    
+<hr>
+<section class="espacio-reservado">
+    <div class="container">
+        <h2>Camaro Coupé</h2>
+        <div class="titulo-reservado">
+            <div>
+                <h3>Una leyenda que se vuelve más poderosa</h3>
+            </div>
+            <div class="txt-img">
+                <div class="txt-reservado">
+                    <p>Escuchá desde lejos como ruge su motor. el Camaro Coupé SS está listo para
+                        sorprenderte. Este imponente deportivo de sexta generación. te propone un
+                        diseño agresivo, un rendimiento inigualable y una tecnología jamás vista
+                    </p>
+                </div>
+                <div class="img-reservado">
+                    <img src="img/pngwing.com (2).png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div>
+            <div class="footer-txt">
+                <h5 class="acento-h5">Dirección</h5>
+                <h5>Calle Sin Nombre 0000 - Corrientes - Argentina</h5>
+                <h5>Institucional</h5>
+                <h5>Mediakit</h5>
+            </div>
+            <div class="footer-txt">
+                <h5 class="acento-h5">Contacto</h5>
+                <h5>Comercial: comercial@gradual.com</h5>
+                <h5>Redacción: personal@gradual.com</h5>
+                <h5>Tel.: 3794 666666</h5> 
+            </div>
+        </div>
+    </div>
+    <div class="container-final">
+        <h5>Corrientes Gradual versión 4.2</h5>
+    </div>
+</footer>
 </body>
 </html>
