@@ -509,8 +509,47 @@ footer {
     }
 
     .container-pag-1 {
+        width: 100%;
+        max-width: 1000px;
+        padding-left: 50px;
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
     }
 
+    .container-pag-1 h3 {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .container-pag-1 h4 {
+        color: rgb(151, 145, 145);
+        font-weight: bold;
+    }
+
+    .cab-pag-1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .caja-img {
+        padding-left: 50px;
+    }
+    
+    .img-pag-1 {
+        width: 400px;
+    }
+
+    .container-pag-2 {
+        margin: 50px;
+    }
+
+    .container-pag-2 p {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    
 }
