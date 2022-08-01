@@ -244,6 +244,7 @@ footer {
     #interior-mobile,
     #curiosidades-mobile,
     #icon_menu,
+    .container-mobile,
     .hero-responsive {
     display: none;
     }
@@ -322,7 +323,29 @@ footer {
         background-color: #fff;
         border-radius: 5px;
     }
+
+    .carta-500x500-1 h3,
+    .carta-500x500-1 h4,
+    .carta-500x500-1 p,
+    .carta-250x250 h3,
+    .carta-250x250 h4,
+    .carta-250x250 p {
+        padding-left: 10px;
+    }
+
+    .carta-500x500-1 h4,
+    .carta-250x250 h4 {
+        text-decoration: underline;
+    }
     
+    .carta-250x250 h3 {
+        font-size: 25px;
+    }
+
+    .carta-250x250 p {
+        font-size: 15px;
+    }
+
     .carta-250x250 {
         margin-right: 5px;
         display: flex;
@@ -483,6 +506,11 @@ footer {
     .ilustro img {
         width: 700px;
         margin-left: 25%;
+    }
+
+    .container-pag-1 {
+        display: grid;
+        grid-gap: 20px;
     }
 
 }
