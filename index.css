@@ -11,6 +11,14 @@ body {
     margin: 0;
     background-color: #efe8d9;
 }
+.page-not-found {
+    background-color: #fff;
+}
+
+.page-not-found img {
+    
+    margin-left: 15%;
+}
 
 /*mobile*/
 h1 {font-size: 3em;}
@@ -36,14 +44,27 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
 .bars__menu {
         z-index: 40;
-        position: absolute;
-        right: 5px;
-        top: 70px;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
+        position: relative;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+}
+
+.menu-ham {
+    z-index: 20;
+    position: fixed;
+    background-color: #efe8d9;
+    height: 100px;
+    width: 375px;
+    padding-top: 7px;
+    padding-left: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .bars__menu span {
@@ -51,17 +72,20 @@ a:hover {
     width: 100%;
     height: 3px;
     background-color: #f30024;
-    margin-top: 10px;
+    margin-top: 7px;
     transform-origin: 0px 100%;
     transition: all 300ms;
 }
 
+
+
 .container {
-    max-width: 1250px;
+    max-width: 375px;
     margin: auto;
 }
 
-header .container {
+header .containe {
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,20 +129,19 @@ header a:hover {
     color: #000;
 }
 
-#current_date {
+#current_date,
+#ww_32b53fbaffcfc {
     display: none;
 }
 
 .hero-responsive {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-position: center center;
-    width: 500px;
+    width: 375px;
     position: relative;
     margin-bottom: 50px;
-    padding: 0;
+    padding-top: 150px;
 }
 
 .section-hero-desktop {
@@ -126,19 +149,17 @@ header a:hover {
 }
 
 /*noticias de Corrientes*/
+
+
+
 #noticias-de-corrientes,
 #interior,
 #curiosidades {
-    display: none;
-}
-
-#noticias-de-corrientes-mobile,
-#interior-mobile,
-#curiosidades-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
 }
 
 #interior-mobile {
@@ -156,9 +177,7 @@ header a:hover {
     font-size: 20px;
 }
 
-.text-acent {
-    color: #f30024;
-}
+
 
 hr {
     margin: 50px;
@@ -240,21 +259,13 @@ footer {
         grid-template-rows: repeat(4, auto);
     }
 
-    #noticias-de-corrientes-mobile,
-    #interior-mobile,
-    #curiosidades-mobile,
-    #icon_menu,
-    .container-mobile,
+    
+    .menu-ham,
     .hero-responsive {
     display: none;
     }
 
-    #noticias-de-corrientes,
-    #interior,
-    #curiosidades,
-    #current_date {
-    display: block;
-    }
+    
 
     .menu {
         display: flex;
@@ -362,24 +373,28 @@ footer {
 
     /*estilos de noticias de corrientes*/
 
-    #noticias-de-corrientes .titulo {
+    #noticias-de-corrientes .titulo,
+    #ecologia .titulo {
         grid-column-start: 1;
         grid-column-end: 4;
     }
 
-    #noticias-de-corrientes .carta-500x500-1 {
+    #noticias-de-corrientes .carta-500x500-1,
+    #ecologia .carta-500x500-1 {
         grid-column-start: 1;
         
     }
 
-    #noticias-de-corrientes .carta-500x500-2 {
+    #noticias-de-corrientes .carta-500x500-2,
+    #ecologia .carta-500x500-2 {
         grid-column-start: 2;
         grid-row-start: 3;
     }
 
     
 
-    #noticias-de-corrientes aside {
+    #noticias-de-corrientes aside,
+    #ecologia aside {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 2;
@@ -422,6 +437,7 @@ footer {
     }
 
     .publicidad-750x250 {
+        grid-row-start: 3;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -477,79 +493,49 @@ footer {
         padding: 0;
     }
 
-    .titulo-reservado {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        text-align: left;
-    }
-
-    .img-reservado img {
-        width: 1000px;
-    }
-
-    .txt-reservado {
-        display: inline-block;
-        width: 30%;
-    }
-
-    .txt-img {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .ilustro {
-        display: inline-block;
-        width: 100%;
-        
-    }
-
-    .ilustro img {
-        width: 700px;
-        margin-left: 25%;
-    }
-
-    .container-pag-1 {
-        width: 100%;
-        max-width: 1000px;
-        padding-left: 50px;
-        display: grid;
-        grid-gap: 5px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, auto);
-    }
-
-    .container-pag-1 h3 {
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-
-    .container-pag-1 h4 {
-        color: rgb(151, 145, 145);
-        font-weight: bold;
-    }
-
-    .cab-pag-1 {
+    
+    
+    .cab {
         grid-column-start: 1;
         grid-column-end: 4;
     }
 
     .caja-img {
-        padding-left: 50px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
     }
     
     .img-pag-1 {
         width: 400px;
     }
 
-    .container-pag-2 {
-        margin: 50px;
+    .txt-pag-2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
-    .container-pag-2 p {
-        padding-left: 200px;
-        padding-right: 200px;
+    span {
+        font-size: 20px;
+        text-decoration: underline;
+        font-weight: bold;
     }
+
+    .importante {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: #f30024;
+        color: #f5f5f5;
+        border-radius: 5px;
+    }
+
+    #current_date,
+#ww_32b53fbaffcfc {
+    display: block;
+}
+
+    
 
     
 }

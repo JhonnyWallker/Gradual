@@ -15,7 +15,7 @@
 <body>
     <header>
         <div id="ww_32b53fbaffcfc" v="1.20" loc="auto" a='{"t":"ticker","lang":"es","ids":[],"cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'><a href="https://weatherwidget.org/es/" id="ww_32b53fbaffcfc_u" target="_blank">Widget de clima html para el sitio web de Weatherwidget.org</a></div><script async src="https://srv1.weatherwidget.org/js/?id=ww_32b53fbaffcfc"></script>
-        <div class="container"> 
+        <section class="container-mobile">
             <div class="menu-ham">
                 <div id="icon_menu">
                     <div class="bars__menu">
@@ -24,18 +24,24 @@
                         <span class="line3__bars-menu"></span>
                     </div>
                 </div>
-                    <script src="script.js"></script>
+                <script src="script.js"></script>
+                <div>
+                    <a href="index.html">
+                        <img src="img/logo-gradual-blog-196x58.png">
+                    </a>
                 </div>
-        </div>
+            </div>
+        </section>        
+        
         <div class="menu">
             <nav>
                 <ul>
                     <li><a title="Inicio" href="index.html">Inicio</a></li>
                     <li><a title="Noticias de Corrientes" href="#noticias-de-corrientes">Noticias de Corrientes</a></li>
                     <li><a title="Interior" href="#interior">Interior</a></li>
-                    <li><a title="Curiosidades" href="#curiosidades">Curiosidades</a></li>
-                    <li><a title="Cambalaches" href="pag.html">Cambalaches</a></li>
-                    <li><a title="Clasificados" href="pag.html">Clasificados</a></li>
+                    <li><a title="Curiosidades" href="#ecologia">Ecología</a></li>
+                    <li><a title="Cambalaches" href="pag-vacia.html">Cambalaches</a></li>
+                    <li><a title="Clasificados" href="pag-vacia.html">Clasificados</a></li>
                     
                 </ul>
                 
@@ -58,25 +64,18 @@
     </section>
     
     <section class="hero-responsive">
-        <a href="index.html">
-            <img src="img/logo-gradual-375x190.png">
-        </a>
+        
         <div>
-            <img class="img-banner" src="gif/ctes2030-375x375.gif">
+            <img class="img-banner" src="gif/ctes2030-250x250.gif">
         </div>
     </section>
-
-    
-    
     <hr>
-    
-    
     <!--Noticias de Corrientes-->
     <section id="noticias-de-corrientes">
         
             <div class="container">
                     <div class="titulo">
-                            <h2>Noticias de <span class="text-acent">Corrientes</span></h2>
+                            <h2>Noticias de Corrientes</h2>
                     </div>
                     <div class="carta-500x500-1">
                         <a href="noticia-de-corrientes-1.html">
@@ -93,7 +92,7 @@
                         <div class="carta-250x250">
                             <a href="noticias-de-corrientes-2.html">
                                 <h4>PRODUCCIÓN</h4>
-                                <!--<img src="img/error-404-250x250.jpg">-->
+                                
                                 <h3 title="Título de Noticia">Llamado a Licitación</h3>
                                 <p>REPÚBLICA ARGENTINA MEJORAMIENTO DE CAMINOS RURALES EN 
                                     ÁREAS PRODUCTIVAS DE LA PROVINCIA DE CORRIENTES RP 
@@ -122,12 +121,13 @@
                             </a>
                         </div>
                         <div class="carta-250x250">
-                            <a href="pag.html">
-                                <img src="img/error-404-250x250.jpg">
-                                <h4 title="Título de Noticia">Título de Noticia</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero, 
-                                    accusantium repellendus sunt fugiat dolor assumenda saepe eius id facere? 
-                                    Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>
+                            <a href="noticia-de-corrientes-5.html">
+                                <h4>SALUD PÚBLICA</h4>
+                                <img src="img/hospital-250x167.jpg">
+                                <h3 title="Título de Noticia">Asumió la nueva directora en el Hospital de Isla Apipé</h3>
+                                <p>Se trata de Hilda Patricia Cuart. La puesta en funciones estuvo a cargo de los directores 
+                                    de Gestión Hospitalaria e Instituciones de Salud, Alberto Arregín; y General de Capital 
+                                    Humano, Teresita Domínguez, respectivamente</p>
                             </a>
                         </div>
                     </div>
@@ -140,82 +140,24 @@
                                 de la Nación, Jaime Perczyk, la comitiva se trasladó hasta la Escuela Técnica “Juana Manso”...</p>
                         </a>
                     </div>
+                    
                         
                     
                         
-                    <aside><!--espacion publicitario-->
+                    <aside><!--espacio publicitario-->
                         <img title="Corrientes somos todos" src="gif/ctes2030-250x100.gif">
                         <img title="Corrientes somos todos" src="gif/08 250x100.gif">
                     </aside><!--espacion publicitario-->
+                    <div class="importante">
+                        <h4>La DPEC realizará trabajos de mejoras en Capital</h4>
+                        <p>La Dirección Provincial de Energía de Corrientes (DPEC) informa que con motivo de realizar mejoras en el servicio, se ejecutarán tareas de mantenimiento de Líneas de Media Tensión (LMT), por lo cual se interrumpirá el suministro de energía eléctrica en la ciudad CAPITAL, el miércoles 03/08/22, en el horario de 10:00 a 13:00 Hs, en las zonas de los barrios: Nuevo, 183 Viviendas, 148 Viviendas, San Jorge y zonas de influencia.</p>
+                    </div>
             </div>
-    </section>        
-        <!--Noticias de Corrientes-->
-        
-        <!--Noticias de Corrientes mobile-->
-    <section id="noticias-de-corrientes-mobile">
-        <div class="container-mobile">
-            <div class="titulo">
-                    <h2>Noticias de <span class="text-acent">Corrientes</span></h2>
-            </div>
-            <div class="carta-375x375">
-                <a href="pag.html">
-                    <img src="img/error-404-375x375.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            <div class="carta-375x375">
-                <a href="pag.html">
-                    <img src="img/error-404-375x375.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            <div class="carta-375x375">
-                <a href="pag.html">
-                    <img src="img/error-404-375x375.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            <div class="carta-375x375">
-                <a href="pag.html">
-                    <img src="img/error-404-375x375.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            <div class="carta-375x375">
-                <a href="pag.html">
-                    <img src="img/error-404-375x375.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            <div class="carta-375x375">
-                <a href="pag.html">
-                    <img src="img/error-404-375x375.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            
-                
-            
-                
-            <aside><!--espacion publicitario-->
-                <img title="Corrientes somos todos" src="gif/ctes2030-250x100.gif">
-                <img title="Corrientes somos todos" src="gif/08 250x100.gif">
-            </aside><!--espacion publicitario-->
-    </div>
-    </section>    
-      <!--noticias de Corrientes mobile-->  
-        
-        <hr>
-        
+    </section>
+    <!--Noticias de Corrientes-->
+    <hr>
     <!--Interior-->
     <section id="interior">
-        
         <div class="container">
                 <div class="titulo">
                         <h2>Interior</h2>
@@ -231,54 +173,55 @@
                 </div>
                 <div class="pareja-de-cartas-250x250-1">
                     <div class="carta-250x250">
-                        <a href="pag.html">
-                            <img src="img/error-404-250x250.jpg">
-                            <h4 title="Título de Noticia">Título de Noticia</h4>
+                        <a href="pag-vacia.html">
+                            <img src="img/ilutro_250x177.png">
+                            <!--<h4 title="Título de Noticia">Título de Noticia</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus 
                                 labore quae nobis eveniet. Pariatur eum eius eveniet maxime perferendis, 
-                                quis aperiam error iste voluptates tenetur nulla, esse, sit suscipit.</p>
+                                quis aperiam error iste voluptates tenetur nulla, esse, sit suscipit.</p>-->
                         </a>
                     </div>
                     <div class="carta-250x250">
-                        <a href="pag.html">
-                            <img src="img/error-404-250x250.jpg">
-                            <h4 title="Título de Noticia">Título de Noticia</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro, 
-                                voluptate autem cum adipisci explicabo quis qui! Animi maxime magni, aperiam 
-                                laudantium nisi voluptatibus perspiciatis asperiores odio aspernatur non eaque?</p>
+                        <a href="interior-pag-3.html">
+                            <h4>HERRAMIENTA FUNDAMENTAL PARA EL SISTEMA EDUCATIVO</h4>
+                            <img src="img/mercedes-250x167.jpg">
+                            <h3>En Mercedes, Valdés encabezó la entrega de casi 500 notebooks del programa "Incluir Futuro"</h3>
+                            <p>Gustavo Valdés presidió nuevamente una entrega de computadoras a estudiantes que ingresaron 
+                                a la escuela secundaria en 2021; esta vez, en la Escuela Normal “Manual F. Mantilla” 
+                                de Mercedes...</p>
                         </a>
                     </div>
                 </div>
                 <div class="pareja-de-cartas-250x250-2">
                     <div class="carta-250x250">
-                        <a href="pag.html">
-                            <img src="img/error-404-250x250.jpg">
-                            <h4 title="Título de Noticia">Título de Noticia</h4>
+                        <a href="pag-vacia.html">
+                            <img src="img/ilustro250x185.png">
+                            <!--<h4 title="Título de Noticia">Título de Noticia</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad 
                                 fugiat accusamus, quas corporis ipsa soluta. Saepe quasi autem ipsum 
                                 perferendis veritatis dolorem nostrum consectetur cupiditate exercitationem 
-                                mollitia! Dignissimos, corporis!</p>
+                                mollitia! Dignissimos, corporis!</p>-->
                         </a>
                     </div>
                     <div class="carta-250x250">
-                        <a href="pag.html">
-                            <img src="img/error-404-250x250.jpg">
-                            <h4 title="Título de Noticia">Título de Noticia</h4>
+                        <a href="pag-vacia.html">
+                            <img src="img/ilustro_250x213.png">
+                            <!--<h4 title="Título de Noticia">Título de Noticia</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero, 
                                 accusantium repellendus sunt fugiat dolor assumenda saepe eius id facere? 
-                                Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>
+                                Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>-->
                         </a>
                     </div>
                 </div>
                 <div class="carta-500x500-2">
-                    <a href="pag.html">
-                        <img src="img/error-404-510x510.jpg">
-                        <h3 title="Título de Noticia">Título de Noticia</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <a href="pag-vacia.html">
+                        <img src="img/ilustro_510x381.png">
+                        <!--<h3 title="Título de Noticia">Título de Noticia</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>-->
                     </a>
                 </div>
                 <aside><!--espacion publicitario-->
-                    <h3 title="Pucblicidad">Publicidad</h3>
+                    <h3 title="Publicidad">Publicidad</h3>
                 </aside><!--espacion publicitario-->
         </div>
         <div class="publicidad-750x250">
@@ -286,226 +229,86 @@
             <img title="Corrientes somos todos" src="gif/ctes2030-250x250.gif">
         </div>
         
-</section>
-<!--Interior-->
-
-<!--interior mobile-->
-
-<section id="interior-mobile">
-    <div class="container-mobile">
-        <div class="titulo">
-                <h2>Interior</h2>
+    </section>
+    <!--Interior-->
+    <hr>
+    <!--ecología-->
+    <section id="ecologia">
+        <div class="container">
+                <div class="titulo">
+                        <h2>Ecología</h2>
+                </div>
+                <div class="carta-500x500-1">
+                    <a href="ecologia-1.html">
+                        <h4>CORRIENTES Y PARAGUAY</h4>
+                        <img src="img/ecologia-510x382.jpg">
+                        <h3 title="Título de Noticia">La conservación y desarrollo de los recursos 
+                            ícticos, los temas de la Reunión Binacional del Consejo Asesor</h3>
+                        <p>La provincia de Corrientes es pionera en el cuidado y conservación del 
+                            recurso íctico en esta región del país, una premisa impulsada por el 
+                            Gobierno provincial que tiene a la pesca deportiva con devolución como 
+                            uno de los principales productos turísticos. </p>
+                    </a>
+                </div>
+                <div class="pareja-de-cartas-250x250-1">
+                    <div class="carta-250x250">
+                        <a href="pag-vacia.html">
+                            <img src="img/ilutro_250x177.png">
+                            <!--<h4 title="Título de Noticia">Título de Noticia</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus 
+                                labore quae nobis eveniet. Pariatur eum eius eveniet maxime perferendis, 
+                                quis aperiam error iste voluptates tenetur nulla, esse, sit suscipit.</p>-->
+                        </a>
+                    </div>
+                    <div class="carta-250x250">
+                        <a href="interior-pag-3.html">
+                            
+                            <img src="img/ilustro_250x200.png">
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="pareja-de-cartas-250x250-2">
+                    <div class="carta-250x250">
+                        <a href="pag-vacia.html">
+                            <img src="img/ilustro250x185.png">
+                            <!--<h4 title="Título de Noticia">Título de Noticia</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad 
+                                fugiat accusamus, quas corporis ipsa soluta. Saepe quasi autem ipsum 
+                                perferendis veritatis dolorem nostrum consectetur cupiditate exercitationem 
+                                mollitia! Dignissimos, corporis!</p>-->
+                        </a>
+                    </div>
+                    <div class="carta-250x250">
+                        <a href="pag-vacia.html">
+                            <img src="img/ilustro_250x213.png">
+                            <!--<h4 title="Título de Noticia">Título de Noticia</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero, 
+                                accusantium repellendus sunt fugiat dolor assumenda saepe eius id facere? 
+                                Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="carta-500x500-2">
+                    <a href="pag-vacia.html">
+                        <img src="img/ilustro_510x381.png">
+                        <!--<h3 title="Título de Noticia">Título de Noticia</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>-->
+                    </a>
+                </div>
+                <aside><!--espacion publicitario-->
+                    <h3 title="Publicidad"></h3>
+                </aside><!--espacion publicitario-->
         </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <aside><!--espacion publicitario-->
-            <img src="gif/ctes2030-250x100.gif">
-            <img src="gif/08 250x100.gif">
-        </aside><!--espacion publicitario-->
-</div>
-</section>
-<!--inerior mobile-->
-
-<hr>
-    
-<!--Curiosidades-->
-<section id="curiosidades">
+                
+                    
+                
+                    
+                
         
-    <div class="container">
-            <div class="titulo">
-                    <h2>Curiosidades</h2>
-            </div>
-            <div class="carta-500x500-1">
-                <a href="pag.html">
-                    <img src="img/error-404-510x510.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            <div class="pareja-de-cartas-250x250-1">
-                <div class="carta-250x250">
-                    <a href="pag.html">
-                        <img src="img/error-404-250x250.jpg">
-                        <h4 title="Título de Noticia">Título de Noticia</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus 
-                            labore quae nobis eveniet. Pariatur eum eius eveniet maxime perferendis, 
-                            quis aperiam error iste voluptates tenetur nulla, esse, sit suscipit.</p>
-                    </a>
-                </div>
-                <div class="carta-250x250">
-                    <a href="pag.html">
-                        <img src="img/error-404-250x250.jpg">
-                        <h4 title="Título de Noticia">Título de Noticia</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro, 
-                            voluptate autem cum adipisci explicabo quis qui! Animi maxime magni, aperiam 
-                            laudantium nisi voluptatibus perspiciatis asperiores odio aspernatur non eaque?</p>
-                    </a>
-                </div>
-            </div>
-            <div class="pareja-de-cartas-250x250-2">
-                <div class="carta-250x250">
-                    <a href="pag.html">
-                        <img src="img/error-404-250x250.jpg">
-                        <h4 title="Título de Noticia">Título de Noticia</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ad 
-                            fugiat accusamus, quas corporis ipsa soluta. Saepe quasi autem ipsum 
-                            perferendis veritatis dolorem nostrum consectetur cupiditate exercitationem 
-                            mollitia! Dignissimos, corporis!</p>
-                    </a>
-                </div>
-                <div class="carta-250x250">
-                    <a href="pag.html">
-                        <img src="img/error-404-250x250.jpg">
-                        <h4 title="Título de Noticia">Título de Noticia</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero, 
-                            accusantium repellendus sunt fugiat dolor assumenda saepe eius id facere? 
-                            Consectetur, delectus corporis. Cum dolorem doloribus assumenda numquam reprehenderit?</p>
-                    </a>
-                </div>
-            </div>
-            <div class="carta-500x500-2">
-                <a href="pag.html">
-                    <img src="img/error-404-510x510.jpg">
-                    <h3 title="Título de Noticia">Título de Noticia</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </a>
-            </div>
-            <aside><!--espacion publicitario-->
-                <h3 title="Publicidad">Publicidad</h3>
-            </aside><!--espacion publicitario-->
-    </div>
 </section>
-<!--curiosidades-->
-
-
-<!--curiosidades mobile-->
-
-<section id="curiosidades-mobile">
-    <div class="container-mobile">
-        <div class="titulo">
-                <h2>Curiosidades</h2>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <div class="carta-375x375">
-            <a href="pag.html">
-                <img src="img/error-404-375x375.jpg">
-                <h3 title="Título de Noticia">Título de Noticia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </a>
-        </div>
-        <aside><!--espacion publicitario-->
-            <img src="gif/ctes2030-250x100.gif">
-            <img src="gif/08 250x100.gif">
-        </aside><!--espacion publicitario-->
-</div>
-</section> 
-<!--curiosidades mobile-->    
-    
-<hr>
-<!--
-    <section class="ilustro">
-    <img src="img/llamada.png">
-</section>
--->
-
-<!--
-    <section class="espacio-reservado">
-    <div class="container">
-        <h2>Camaro Coupé</h2>
-        <div class="titulo-reservado">
-            <div>
-                <h3>Una leyenda que se vuelve más poderosa</h3>
-            </div>
-            <div class="txt-img">
-                <div class="txt-reservado">
-                    <p>Escuchá desde lejos como ruge su motor. el Camaro Coupé SS está listo para
-                        sorprenderte. Este imponente deportivo de sexta generación. te propone un
-                        diseño agresivo, un rendimiento inigualable y una tecnología jamás vista
-                    </p>
-                </div>
-                <div class="img-reservado">
-                    <img src="img/pngwing.com (2).png">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
+    <!--ecología-->
+    <hr>
 <footer>
     <div class="container">
         <div>
