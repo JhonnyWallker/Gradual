@@ -252,6 +252,7 @@ footer {
     .container {
         width: 100%;
         max-width: 1250px;
+        margin-top: 5px;
         padding: 0;
         display: grid;
         grid-gap: 5px;
@@ -378,20 +379,11 @@ footer {
         grid-column-start: 1;
         grid-column-end: 4;
     }
-
-    #noticias-de-corrientes .carta-500x500-1,
-    #ecologia .carta-500x500-1 {
-        grid-column-start: 1;
+    
+    .covid {
+        text-align: left;
         
     }
-
-    #noticias-de-corrientes .carta-500x500-2,
-    #ecologia .carta-500x500-2 {
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-
-    
 
     #noticias-de-corrientes aside,
     #ecologia aside {
@@ -409,17 +401,7 @@ footer {
         grid-column-start: 1;
         grid-column-end: 4;
     }
-
-    #interior .carta-500x500-1 {
-        grid-column-start: 1;
-        text-align: left;
-    }
-
-    #interior .carta-500x500-2 {
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-
+    
     
 
     #interior aside {
@@ -531,7 +513,7 @@ footer {
     }
 
     #current_date,
-#ww_32b53fbaffcfc {
+    #ww_32b53fbaffcfc {
     display: block;
 }
 
